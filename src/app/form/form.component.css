@@ -11,7 +11,7 @@ input[type=text] {
   padding: 12px 20px;
   margin: 8px 0;
   box-sizing: border-box;
-  background-color: #f8f8f8;
+  background-color: rgb(226, 240, 235);
   border-radius: 8px;
 }
 textarea {
@@ -21,6 +21,6 @@ textarea {
   box-sizing: border-box;
   border: 2px solid #ccc;
   border-radius: 4px;
-  background-color: #f8f8f8;
+  background-color:rgb(236, 244, 241);
   resize: none;
 }
