@@ -1,1 +1,19 @@
-/* You can add global styles to this file, and also import other style files */
+
+ @import "~bootstrap/dist/css/bootstrap.css";
+body{
+    background-image: url("./assets/images/quote9.jpg");
+    background-position: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    /* background-attachment: fixed; */
+    margin: auto;
+    padding: auto;
+}
+
+
+
+
+
+
+
+   
