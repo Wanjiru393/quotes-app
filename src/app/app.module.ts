@@ -7,13 +7,15 @@ import { AppComponent } from './app.component';
 import { QuotesComponent } from './quotes/quotes.component';
 import { HighlightDirective } from './highlight.directive';
 import { FormComponent } from './form/form.component';
+import { DatePipeComponent } from './date-pipe/date-pipe.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     QuotesComponent,
     HighlightDirective,
-    FormComponent
+    FormComponent,
+    DatePipeComponent
   ],
   imports: [
     BrowserModule,AppRoutingModule,FormsModule],
