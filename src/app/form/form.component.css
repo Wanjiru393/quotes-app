@@ -1,0 +1,26 @@
+#form{
+    border-radius: 15px;
+    margin: 15px;
+
+}
+/* #form.input{
+    width: 100%;
+} */
+input[type=text] {
+  width: 90%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  background-color: #f8f8f8;
+  border-radius: 8px;
+}
+textarea {
+  width: 90%;
+  height: 100px;
+  padding: 12px 20px;
+  box-sizing: border-box;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  background-color: #f8f8f8;
+  resize: none;
+}
