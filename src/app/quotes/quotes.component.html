@@ -11,14 +11,12 @@
         <ul *ngFor="let quote of quotes">
         <div *ngIf="quote.upvotes == highest; then highlight else empty"></div>
         <ng-template #highlight>
-            <li appHighlight>{{quote.quote}} <p> Author: {{quote.author}}</p><p>{{quote.name}} added this Quote.
+            <li appHighlight>{{quote.quote}} <p> Author: {{quote.author}}</p><p>Posted by: {{quote.name}} <p>{{quote.datePosted}}</p> <app-vote></app-vote>
 
-            </p><app-vote></app-vote> <p><app-date-pipe></app-date-pipe> Days</p></li>
+            </li>
         </ng-template>
         <ng-template #empty>
-            <li>{{quote.quote}} <p> Author: {{quote.author}}</p> Posted by <span>{{quote.name}} 
-
-            </span>,on: {{quote.datePosted|date}} .{{quote.datePosted}} days ago.<app-vote></app-vote></li>
+            <li>{{quote.quote}} <p> Author: {{quote.author}}</p> Posted by <span>{{quote.name}} <p>{{quote.datePosted}}</p><app-vote></app-vote> </span></li>
         </ng-template>
     </ul>
     </div>
@@ -27,6 +25,3 @@
     </div>
   </div>
 </div>
-
-
-<app-date-pipe></app-date-pipe>

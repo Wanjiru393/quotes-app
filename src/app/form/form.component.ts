@@ -9,11 +9,13 @@ import { Quote } from '../quote';
   styleUrls: ['./form.component.css']
 })
 export class FormComponent implements OnInit {
-  quoted =new Quote(0,"","","",0,0);
+  quoted =new Quote(0,"","","",new Date(),0,0);
+
   @Output() add = new EventEmitter<Quote>();
+  myForm: any;
   addedQuote(){
-    // this.add.emit(:string);
-    this.quoted = new Quote(0,"","","",0,0);
+    this.add.emit(this.quoted);
+    this.quoted = new Quote(0,"","","",new Date(),0,0);
   }
   newQuote(){
     this.add.emit(this.quoted)

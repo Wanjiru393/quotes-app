@@ -7,22 +7,24 @@ import { Quote } from '../quote';
   styleUrls: ['./quotes.component.css']
 })
 export class QuotesComponent implements OnInit {
+  // resetTimer =false;
+  // startTime =0;
+  // timePassed =0;
+  // interval: number;
+  // counter: number | undefined;
+
 
   addQuote(quote:Quote){
     this.quotes.push(quote)
   }
 
   quotes: Quote[] =[
-    new Quote(1,'"And, when you want something, all the universe conspires in helping you to achieve it.”',"Paulo Coelho","Mercy",1,0),
-    new Quote(2,'“Be the change that you wish to see in the world.”','Mahatma Gandhi','Ian',0,0),
-    new Quote(3,'“Do not take life too seriously,live. You will never get out of it alive.”','Elbert Geoffry Hubbard','Kioko',0,0),
-    new Quote(4,'"Failure is another stepping-stone to greatness."','Oprah Winfrey','Jane',0,0)
+    new Quote(1,'"And, when you want something, all the universe conspires in helping you to achieve it.”',"Paulo Coelho","Mercy",new Date(2020,7,10),0,0),
+    new Quote(2,'“Be the change that you wish to see in the world.”','Mahatma Gandhi','Ian',new Date(2020,6,12),0,0),
+    new Quote(3,'“Do not take life too seriously,live. You will never get out of it alive.”','Elbert Geoffry Hubbard','Kioko',new Date(2021,6,9),1,0),
+    // new Quote(4,'"Failure is another stepping-stone to greatness."','Oprah Winfrey','Jane',0,0)
   ];
-  get sortQuotes(){
-    return this.quotes.sort((a,b) =>{
-      return <any>new Date(b.datePosted) - <any>new Date (a.datePosted);
-    });
-  }
+ 
 
   arr: number[] =this.quotes.map(quote=>quote.upvotes)
   highest = Math.max(...this.arr)
@@ -32,19 +34,23 @@ export class QuotesComponent implements OnInit {
     quote.completeDate = new Date(quote.completeDate)
     this.quotes.push(quote)
   }
-  // quoteDelete(isRead:any){
-  //   if (isRead) {
-  //     let toDelete = confirm('Delete?')
-  //     if(toDelete){
-  //       this.quotes.splice(index,1);
-  //     }
-  //   }
-  // }
+ 
 
-  constructor() { }
+  constructor() {
+    // if(this.resetTimer === false) {
+    //   this.startTime = Date.now();
+    //   this.resetTimer = true;
 
+    // }
+    // this.interval =setInterval(() => {
+    //   this.counter =Date.now();
+    //   this.timePassed =Date.now() - this.startTime) / 1000
+
+    }
   ngOnInit(): void {
+    // throw new Error('Method not implemented.');
   }
+      
+   }
 
-}
-
+  
