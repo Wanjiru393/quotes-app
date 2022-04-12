@@ -1,11 +1,11 @@
 #form{
     border-radius: 15px;
     margin: 15px;
-    height: 550px;
+    height: 500px;
     margin-top: 15px;
     padding-right: 15px;
     background-color:cyan;
-    width:90%;
+    width:80%;
   
 }
 .btn{
@@ -13,13 +13,17 @@
   margin-top: 15px;
  
 }
+h3{
+  font-weight:100;
+  font-size: 20px;
+}
 label{
   font-size: 20px;
   padding: 10px;
 }
 input[type=text] {
   width: 95%;
-  height: 80px;
+  height: 65px;
   padding: 15px 30px;
   margin: 8px 0;
   box-sizing: border-box;
