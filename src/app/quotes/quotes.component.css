@@ -1,10 +1,13 @@
 li{
-    text-align: center;
-    font-size: 20px;;
+    
+    font-size: 20px;
+    width: 90%;
     
    
 }
 ul{
-    background-color:cyan;   
+    background-color:cyan; 
+    width: 90%;  
+    border-radius: 10px;
 
 }
