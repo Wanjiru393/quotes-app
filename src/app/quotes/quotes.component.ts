@@ -34,18 +34,10 @@ export class QuotesComponent implements OnInit {
  
 
   constructor() {
-    // if(this.resetTimer === false) {
-    //   this.startTime = Date.now();
-    //   this.resetTimer = true;
-
-    // }
-    // this.interval =setInterval(() => {
-    //   this.counter =Date.now();
-    //   this.timePassed =Date.now() - this.startTime) / 1000
-
+   
     }
   ngOnInit(): void {
-    // throw new Error('Method not implemented.');
+    
   }
       
    }

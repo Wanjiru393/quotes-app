@@ -1,12 +1,13 @@
 li{
     
     font-size: 20px;
-    width: 90%;
+    width: 100%;
     
    
 }
 ul{
     background-color:cyan; 
+    
     width: 90%;  
     border-radius: 10px;
 
